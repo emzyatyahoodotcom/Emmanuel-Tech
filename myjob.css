@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--black);
+}
+
+                                /**vairables**/
+
+:root {
+    --black: rgb(87, 86, 86);
+    --blue: rgb(104, 213, 250);
+}
+
+                                /**loginpage**/
+                                
+main {
+    min-width: 100vh;
+}
+.loginpage {
+    display: flex;
+    flex-wrap: 1;
+    
+}
+     /**image**/
+.image {
+    background-image: url("1795174938763.jpg");
+    min-height: 100vh;
+    width: 65%;
+    background-size: cover;
+}
+    /**form**/       
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 30px;
+    width: 35%;
+    background-color: var(--black);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--blue);
+}
+
+
+label {
+    display: block;
+    padding-bottom: 6px;
+}
+
+input {
+    height: 25px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+input:focus {
+    border-color: var(--blue);
+    border-width: 2px;
+}
+.showpassword {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.showpassword button {
+    position: absolute;
+    right: 8px;
+    z-index: 1;
+    top: 5px;
+    border: none;
+}
+
+     /*checkbox*/
+
+.check {
+    display: flex;
+    gap: 10px;
+}
+input[type="checkbox"] {
+    accent-color: green;
+}
+span a {
+    text-decoration: none;
+    color: var(--blue)
+}
+   /*button*/
+
+.submit {
+    padding: 6px 40px;
+    background-color: var(--blue);
+    color: rgb(85, 84, 84);
+}
+  /*displayForm*/
+
+.displayForm {
+    display: none;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+.displayForm {
+    width: 100vw;
+    overflow-y: auto;
+}
+.displayform.content {
+    width: 50%;
+    max-width: 800px;
+    font-size: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.displayform.content h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* .box {
+    padding: 50px;
+    background-color: red;
+    color: white;
+    width: 100px;
+    /* height: 100px;
+    margin: 50px;
+    animation: move 1.5s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    10% {
+        transform: rotate(360deg) translateX(50px);
+        color: blue;
+    }
+    40% {
+        
+        opacity: 0;
+        
+    }
+
+    50% {
+        
+        opacity: 1;
+    }
+    100% {
+        
+        transform: translateX(360px);
+    }
+   
+} */
