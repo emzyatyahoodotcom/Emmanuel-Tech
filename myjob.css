@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/* body {
     
-}
+} */
 
                                 /**vairables**/
 
@@ -52,7 +52,6 @@ main {
 
 h1 {
     font-size: 50px;
-    align-self: stretch;
 }
 
 h2 {
@@ -124,12 +123,13 @@ span a {
 }
 
 .displayform.content {
-    width: 50%;
+    width: 80%;
     max-width: 800px;
-    font-size: 20px;
+    font-size: 125%;
     margin: 50px auto;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
 }
 .displayform.content h3 {
     font-size: 150%;
@@ -141,13 +141,45 @@ span a {
     position: fixed;
     inset: 0;
     height: 100%;
-    
 }
-
-@media(max-width: 600px) {
-    .displayform.content {
-        width: 70%;
-    }
+   /*submit*/
+.submit {
+    border-radius: 8px;
+}
+  /* divider */
+.divider {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    width: 100%;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: black;
+}
+   /* loginWithOther */
+.socialRaper {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.loginWithOther {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 2px;
+    border-radius: 7px;
+    width: 100%;
+}
+  /* alreadyhaveanacc */
+.alreadyhaveanacc a {
+    text-decoration: none;
+    color: var(--blue)
+}
+@media(max-width: 700px) {
     .image {
         display: none;
     }
@@ -160,17 +192,24 @@ span a {
 
     }
     .form {
-        width: 70%;
-        min-width: 220px;
-        padding: 7px auto;
-        align-items: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        min-width: 220px;        
         border-radius: 8px;
         box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     }
     .lineargradient {
         display: none;
     }
-
+    form {
+        text-align: center;
+        width: 180px;
+    }
+    form label{
+        text-align: left;
+    }
 }
 
 
