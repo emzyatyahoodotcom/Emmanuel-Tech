@@ -29,5 +29,12 @@ buttonSecond.addEventListener("click", function() {
 let privacyPollicy = document.querySelector(".privacyPollicy");
 let displayForm = document.querySelector(".displayForm");
 privacyPollicy.addEventListener("click", function() {
+    setTimeout(function () {
     displayForm.style.display = "block";
+    }, 2000);
+    histroy.pushState({privacyPolicy: true}, "", "#dialog");
+    })
+    window.addEventListener("popstate", function() {
+        displayForm.style.display = "none";
+    
 });
