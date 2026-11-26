@@ -301,13 +301,25 @@ width: fit-content;
 
     }
     .form {
-        display: flex;
+        width: 100%;
+       /*  display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        
         min-width: 220px; 
         height: fit-content; 
         border-radius: 8px;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.9); */
+    }
+    .firstform {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 220px; 
+        height: fit-content; 
+        border-radius: 8px;
+        padding: 10px;
         box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     }
     .lineargradient {
@@ -315,7 +327,7 @@ width: fit-content;
     }
     form {
         text-align: center;
-        width: 180px;
+        max-width: 180px;
     }
     form label{
         text-align: left;
