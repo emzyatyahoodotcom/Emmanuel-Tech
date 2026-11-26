@@ -7,6 +7,7 @@
     
 } */
 
+
                                 /**vairables**/
 
 :root {
@@ -42,12 +43,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 10px;
     padding: 10px;
     width: 30%;
     z-index: 1;
     background-color: var(--black);
+}
+.formform {
+    width: 195px;
 }
 
 h1 {
@@ -109,6 +113,74 @@ span a {
     background-color: var(--blue);
     color: rgb(85, 84, 84);
 }
+
+                                                       /*secondform*/
+.secondform {
+    display: none;
+    flex-direction: column;
+}
+.firstform {
+    display: flex;
+    flex-direction: column;
+}
+ #ggg {
+    margin-bottom: 10px;
+ }
+ .loginpass {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+ }
+ .loginpass button {
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    border: none;
+ }
+ .secondform a {
+    text-decoration: none;
+    color: var(--blue);
+ }
+ .enter {
+    display: block;
+    width: 100%;
+    background-color: var(--blue);
+    padding: 5px 0px;
+    border-radius: 8px;
+    margin: 7px 0;
+ }
+ .or {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+ }
+ .or::after,
+ .or::before {
+    content: "";
+    flex: 1;
+    background-color: black;
+    height: 1px;
+
+ }
+ .mybuts {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+ }
+ .mybuts button {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 8px;
+ }
+ .mybuts img {
+    margin-right: 5px;
+ }
   /*displayForm*/
 
 .displayForm {
@@ -142,6 +214,40 @@ span a {
     inset: 0;
     height: 100%;
 }
+  /*termsAndConditions*/
+.termsAndConditions {
+    display: none;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    padding: 10px;
+}
+.heading.raper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    padding: 20px;
+}
+.heading.raper h3 {
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+.info {
+    margin-bottom: 20px;
+}
+.termsAndConditions h4 {
+    color: var(--blue)
+}
+.termsAndConditions p {
+    margin-bottom: 20px;
+}
    /*submit*/
 .submit {
     border-radius: 8px;
@@ -165,6 +271,7 @@ span a {
 display: flex;
 flex-direction: column;
 gap: 5px;
+width: fit-content;
 }
 .loginWithOther {
     display: flex;
@@ -172,14 +279,14 @@ gap: 5px;
     gap: 5px;
     padding: 5px 2px;
     border-radius: 7px;
-    width: 100%;
 }
   /* alreadyhaveanacc */
 .alreadyhaveanacc a {
     text-decoration: none;
     color: var(--blue)
 }
-@media(max-width: 700px) {
+
+@media(max-width: 720px) {
     .image {
         display: none;
     }
@@ -187,7 +294,7 @@ gap: 5px;
         display: flex;
         justify-content: center;
         width: 100%;
-
+        overflow-y: scroll;   
         padding: 20px 0 20px 0;
 
     }
@@ -196,7 +303,8 @@ gap: 5px;
         flex-direction: column;
         align-items: center;
         width: 80%;
-        min-width: 220px;        
+        min-width: 220px; 
+        height: fit-content; 
         border-radius: 8px;
         box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     }
