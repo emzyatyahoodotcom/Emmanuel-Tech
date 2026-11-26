@@ -60,17 +60,14 @@ let createaccount = document.querySelector("#createaccount");
 let login = document.querySelector(".login");
 login.addEventListener("click", function() {
     setTimeout(function () {
-    firstform.style.display = "none";
     secondform.style.display = "flex";
     }, 2000);
      histroy.pushState({termsAndCondition: true}, "", "#dialoge");
 })
 window.addEventListener("popstate", function() {
-    firstform.style.display = "flex";
     secondform.style.display = "none";
 });
 createaccount.addEventListener("click", function() {
-    firstform.style.display = "flex";
     secondform.style.display = "none";
 })
 

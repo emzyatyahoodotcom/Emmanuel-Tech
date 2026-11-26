@@ -38,12 +38,7 @@ main {
 }
     /**form**/       
 .form {
-    height: 100%;
-    width: 30%;
-    z-index: 1;
-    background-color: var(--black);
-}
-.firstform {
+    position: relative;
     box-sizing: border-box;
     height: 100%;
     display: flex;
@@ -52,6 +47,8 @@ main {
     align-items: stretch;
     gap: 10px;
     padding: 10px;
+    width: 30%;
+    z-index: 1;
     background-color: var(--black);
 }
 
@@ -120,6 +117,12 @@ span a {
 .secondform {
     display: none;
     flex-direction: column;
+    position: absolute;
+    align-items: center;
+    background-color: var(--black);
+    z-index: 10;
+    height: 100%;
+    width: 100%;
 }
 .firstform {
     display: flex;
@@ -301,25 +304,13 @@ width: fit-content;
 
     }
     .form {
-        width: 100%;
-       /*  display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        min-width: 220px; 
-        height: fit-content; 
-        border-radius: 8px;
-        box-shadow: 0 0 9px rgba(0, 0, 0, 0.9); */
-    }
-    .firstform {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-width: 220px; 
+        width: 100%;
+        min-width: 0px; 
         height: fit-content; 
         border-radius: 8px;
-        padding: 10px;
         box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     }
     .lineargradient {
