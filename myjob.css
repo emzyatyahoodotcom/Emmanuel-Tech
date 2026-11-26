@@ -48,7 +48,7 @@ main {
     padding: 10px;
     width: 30%;
     z-index: 1;
-    background-color: red;
+    background-color: var(--black);
 }
 
 
@@ -207,7 +207,7 @@ span a {
     color: var(--blue);
 }
 .lineargradient {
-    /* background: linear-gradient(to left, var(--black)33%, transparent 37%); */
+    background: linear-gradient(to left, var(--black)33%, transparent 37%);
     position: fixed;
     inset: 0;
     height: 100%;
